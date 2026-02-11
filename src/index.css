@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-sand-50 text-forest-900 font-body antialiased;
+    background-image: radial-gradient(circle at top left, rgba(186, 206, 190, 0.3), transparent 55%),
+      radial-gradient(circle at 20% 80%, rgba(231, 220, 200, 0.4), transparent 60%);
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading text-forest-900;
+  }
+}
+
+@layer components {
+  .section-pad {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .card {
+    @apply rounded-2xl border border-sand-200 bg-white/80 shadow-soft backdrop-blur;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-sand-200 bg-white/80 px-4 py-1 text-xs uppercase tracking-[0.2em] text-forest-700;
+  }
+}
