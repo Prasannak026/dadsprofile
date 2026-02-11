@@ -36,7 +36,7 @@ const Hero = () => {
         <Reveal className="flex justify-center" delay={0.2}>
           <div className="card flex h-80 w-72 flex-col items-center justify-center gap-4 overflow-hidden bg-white/70 text-center sm:h-96 sm:w-80">
             <img
-              src="/photos/IMG_6344.JPG"
+              src="photos/IMG_6344.JPG"
               alt="Pratap Darigi portrait"
               className="h-full w-full object-cover"
             />

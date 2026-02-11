@@ -4,43 +4,43 @@ import Reveal from '../components/Reveal'
 
 const galleryItems = [
   {
-    src: '/photos/01fb9439-0afd-4dd5-94dd-9d9a9765ba3a.jpg',
+    src: 'photos/01fb9439-0afd-4dd5-94dd-9d9a9765ba3a.jpg',
     caption: 'IPC training, Netherlands',
   },
   {
-    src: '/photos/09a41d73-7962-483b-867b-9c6b356da3b3.jpg',
+    src: 'photos/09a41d73-7962-483b-867b-9c6b356da3b3.jpg',
     caption: 'IPC training, Netherlands',
   },
   {
-    src: '/photos/105b03f2-8215-4ecc-8c98-22af7a15b740.jpg',
+    src: 'photos/105b03f2-8215-4ecc-8c98-22af7a15b740.jpg',
     caption: 'IPC training, Netherlands',
   },
   {
-    src: '/photos/ab49db6c-3bb9-4c23-8699-6a315e531e27.jpg',
+    src: 'photos/ab49db6c-3bb9-4c23-8699-6a315e531e27.jpg',
     caption: 'IPC training, Netherlands',
   },
   {
-    src: '/photos/bb8db9f6-a94b-4a12-9096-55acc368774d.jpg',
+    src: 'photos/bb8db9f6-a94b-4a12-9096-55acc368774d.jpg',
     caption: 'IPC training, Netherlands',
   },
   {
-    src: '/photos/f1d96b45-5d66-411d-a849-8af8bcaef760.JPG',
+    src: 'photos/f1d96b45-5d66-411d-a849-8af8bcaef760.JPG',
     caption: 'IPC training, Netherlands',
   },
   {
-    src: '/photos/IMG_6344.JPG',
+    src: 'photos/IMG_6344.JPG',
     caption: 'IPC training, Netherlands',
   },
   {
-    src: '/photos/415d52c7-ff56-49ce-b3b1-607f80629f91.JPG',
+    src: 'photos/415d52c7-ff56-49ce-b3b1-607f80629f91.JPG',
     caption: 'Poultry farm visit',
   },
   {
-    src: '/photos/IMG_6352.JPG',
+    src: 'photos/IMG_6352.JPG',
     caption: 'International visit',
   },
   {
-    src: '/photos/IMG_8932.jpg',
+    src: 'photos/IMG_8932.jpg',
     caption: 'Personal portrait',
   },
 ]
