@@ -93,9 +93,9 @@ const Expertise = () => {
     <section className="section-pad" id="expertise">
       <Container>
         <SectionHeading
-          eyebrow="Expertise"
+          eyebrow="Expertise • నైపుణ్యం • विशेषज्ञता"
           title="Focused guidance across the poultry value chain"
-          description="Comprehensive consulting for farmers, entrepreneurs, startups, and development organizations."
+          description="Comprehensive consulting for farmers, entrepreneurs, startups, and development organizations. • రైతులు, వ్యాపారవేత్తలు, స్టార్టప్‌లు మరియు అభివృద్ధి సంస్థలకు సమగ్ర సలహా. • किसानों, उद्यमियों, स्टार्टअप्स और विकास संगठनों के लिए व्यापक परामर्श।"
         />
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {expertiseItems.map((item, index) => (
