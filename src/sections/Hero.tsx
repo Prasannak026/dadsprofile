@@ -9,7 +9,7 @@ const Hero = () => {
       <Container className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-6">
           <Reveal>
-            <span className="pill">Professional Poultry Consulting</span>
+            <span className="pill">Professional Poultry Consulting • వృత్తిపరమైన పౌల్ట్రీ సలహా • पेशेवर पोल्ट्री परामर्श</span>
           </Reveal>
           <Reveal delay={0.05}>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
