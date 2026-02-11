@@ -6,7 +6,6 @@ import Footer from './sections/Footer'
 import Gallery from './sections/Gallery'
 import Hero from './sections/Hero'
 import Services from './sections/Services'
-import ThreeBackdrop from './components/ThreeBackdrop'
 
 function App() {
   return (
