@@ -59,31 +59,31 @@ const PlanIcon = () => (
 
 const expertiseItems = [
   {
-    title: 'Scientific poultry management (broilers, layers, native birds)',
+    title: 'Scientific poultry management (broilers, layers, native birds) • శాస్త్రీయ పౌల్ట్రీ నిర్వహణ (బ్రాయిలర్లు, లేయర్లు, దేశీ పక్షులు) • वैज्ञानिक मुर्गी पालन प्रबंधन (ब्रॉयलर, लेयर, देशी पक्षी)',
     icon: <LeafIcon />,
   },
   {
-    title: 'Breed selection and housing systems',
+    title: 'Breed selection and housing systems • జాతి ఎంపిక మరియు గృహ వ్యవస్థలు • नस्ल चयन और आवास प्रणालियाँ',
     icon: <NetworkIcon />,
   },
   {
-    title: 'Poultry health, vaccination, and biosecurity',
+    title: 'Poultry health, vaccination, and biosecurity • పౌల్ట్రీ ఆరోగ్యం, టీకాలు మరియు జీవ భద్రత • मुर्गी स्वास्थ्य, टीकाकरण और जैव सुरक्षा',
     icon: <ShieldIcon />,
   },
   {
-    title: 'Feed formulation and nutrition planning',
+    title: 'Feed formulation and nutrition planning • ఆహార సూత్రీకరణ మరియు పోషకాహార ప్రణాళిక • चारा निर्माण और पोषण योजना',
     icon: <NutritionIcon />,
   },
   {
-    title: 'Hatchery operations and chick management',
+    title: 'Hatchery operations and chick management • హ్యాచరీ కార్యకలాపాలు మరియు కోడిపిల్ల నిర్వహణ • हैचरी संचालन और चूजा प्रबंधन',
     icon: <HatchIcon />,
   },
   {
-    title: 'Poultry business planning and startup support',
+    title: 'Poultry business planning and startup support • పౌల్ట్రీ వ్యాపార ప్రణాళిక మరియు స్టార్టప్ మద్దతు • मुर्गी व्यवसाय योजना और स्टार्टअप समर्थन',
     icon: <PlanIcon />,
   },
   {
-    title: 'Rural and backyard poultry models',
+    title: 'Rural and backyard poultry models • గ్రామీణ మరియు పెరట్లో పౌల్ట్రీ నమూనాలు • ग्रामीण और पिछवाड़े मुर्गी पालन मॉडल',
     icon: <LeafIcon />,
   },
 ]
