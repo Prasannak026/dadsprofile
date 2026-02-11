@@ -20,10 +20,22 @@ const Hero = () => {
             <p className="text-lg sm:text-xl text-forest-700">
               Poultry Consultant | Former CTO, ICAR-DPR, Hyderabad
             </p>
+            <p className="text-base sm:text-lg text-forest-600">
+              పౌల్ట్రీ సలహాదారు | మాజీ సిటిఓ, ఐసిఎఆర్-డిపిఆర్, హైదరాబాద్
+            </p>
+            <p className="text-base sm:text-lg text-forest-600">
+              पोल्ट्री सलाहकार | पूर्व सीटीओ, आईसीएआर-डीपीआर, हैदराबाद
+            </p>
           </Reveal>
           <Reveal delay={0.15}>
             <p className="max-w-xl text-base sm:text-lg text-forest-700">
               35+ years of expertise in scientific poultry farming and business consulting.
+            </p>
+            <p className="max-w-xl text-base text-forest-600">
+              శాస్త్రీయ పౌల్ట్రీ వ్యవసాయం మరియు వ్యాపార సలహాలో 35+ సంవత్సరాల నైపుణ్యం.
+            </p>
+            <p className="max-w-xl text-base text-forest-600">
+              वैज्ञानिक पोल्ट्री फार्मिंग और व्यापार परामर्श में 35+ वर्षों की विशेषज्ञता।
             </p>
           </Reveal>
           <Reveal delay={0.2}>

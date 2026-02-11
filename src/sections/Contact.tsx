@@ -43,9 +43,9 @@ const Contact = () => {
     <section className="section-pad" id="contact">
       <Container>
         <SectionHeading
-          eyebrow="Contact"
-          title="Request long-term advisory support"
-          description="Share your goals and challenges. Responses are typically sent within 24-48 hours."
+          eyebrow="Contact • సంప్రదించండి • संपर्क करें"
+          title="Get in Touch"
+          description="Share your goals and challenges. You and Dr. Darigi will both receive a copy of your message."
         />
         <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_0.85fr]">
           <Reveal>
@@ -120,7 +120,7 @@ const Contact = () => {
                 </motion.div>
               ) : (
                 <div className="rounded-xl border border-sand-200 bg-white/70 p-4 text-sm text-forest-700">
-                  Consultations are confirmed after payment and scheduling.
+                  Both you and Dr. Darigi will receive a copy of your message for record keeping.
                 </div>
               )}
             </div>

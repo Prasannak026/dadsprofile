@@ -1,5 +1,4 @@
 import About from './sections/About'
-import Booking from './sections/Booking'
 import Contact from './sections/Contact'
 import Expertise from './sections/Expertise'
 import Footer from './sections/Footer'
@@ -16,7 +15,6 @@ function App() {
         <Gallery />
         <Expertise />
         <Services />
-        <Booking />
         <Contact />
         <Footer />
       </main>
