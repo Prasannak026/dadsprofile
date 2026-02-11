@@ -40,7 +40,7 @@ const Hero = () => {
           </Reveal>
           <Reveal delay={0.2}>
             <div className="flex flex-wrap gap-4">
-              <PrimaryButton href="#booking">Book Paid Consultation</PrimaryButton>
+              <PrimaryButton href="#contact">Get Started</PrimaryButton>
               <OutlineButton href="#contact">Contact for Long-Term Support</OutlineButton>
             </div>
           </Reveal>
