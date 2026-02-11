@@ -1,43 +1,10 @@
-import { useState } from 'react'
-import type { FormEvent } from 'react'
 import { motion } from 'framer-motion'
 import Container from '../components/Container'
 import SectionHeading from '../components/SectionHeading'
 import PrimaryButton from '../components/PrimaryButton'
 import Reveal from '../components/Reveal'
-import { sendContactEmail } from '../lib/email'
 
 const Contact = () => {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
-  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
-  const [error, setError] = useState<string | null>(null)
-
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-    setError(null)
-
-    if (!form.name || !form.email || !form.message) {
-      setError('Please complete all required fields before sending.')
-      return
-    }
-
-    setStatus('sending')
-
-    try {
-      await sendContactEmail({
-        name: form.name,
-        email: form.email,
-        phone: form.phone,
-        message: form.message,
-        service: 'Contact Form',
-      })
-      setStatus('success')
-      setForm({ name: '', email: '', phone: '', message: '' })
-    } catch (err) {
-      setStatus('error')
-      setError(err instanceof Error ? err.message : 'Unable to send your message.')
-    }
-  }
 
   return (
     <section className="section-pad" id="contact">
@@ -49,16 +16,25 @@ const Contact = () => {
         />
         <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_0.85fr]">
           <Reveal>
-            <form className="card space-y-4 p-6" onSubmit={handleSubmit}>
+            <form 
+              className="card space-y-4 p-6" 
+              action="https://formsubmit.co/pratap1964@yahoo.co.in"
+              method="POST"
+            >
+              {/* FormSubmit Configuration */}
+              <input type="hidden" name="_subject" value="New Contact Form Submission" />
+              <input type="hidden" name="_autoresponse" value="Thank you for contacting Dr. Pratap Darigi. I have received your message and will respond within 24-48 hours." />
+              <input type="hidden" name="_template" value="box" />
+              <input type="text" name="_honey" style={{ display: 'none' }} />
+              
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="text-sm text-forest-700">
                   Name
                   <input
                     type="text"
+                    name="name"
                     required
                     className="mt-2 w-full rounded-xl border border-sand-200 bg-white/80 px-4 py-2 text-sm"
-                    value={form.name}
-                    onChange={(event) => setForm((prev) => ({ ...prev, name: event.target.value }))}
                     placeholder="Your name"
                   />
                 </label>
@@ -66,10 +42,9 @@ const Contact = () => {
                   Email
                   <input
                     type="email"
+                    name="email"
                     required
                     className="mt-2 w-full rounded-xl border border-sand-200 bg-white/80 px-4 py-2 text-sm"
-                    value={form.email}
-                    onChange={(event) => setForm((prev) => ({ ...prev, email: event.target.value }))}
                     placeholder="you@example.com"
                   />
                 </label>
@@ -78,25 +53,22 @@ const Contact = () => {
                 Phone
                 <input
                   type="tel"
+                  name="phone"
                   className="mt-2 w-full rounded-xl border border-sand-200 bg-white/80 px-4 py-2 text-sm"
-                  value={form.phone}
-                  onChange={(event) => setForm((prev) => ({ ...prev, phone: event.target.value }))}
                   placeholder="+91"
                 />
               </label>
               <label className="text-sm text-forest-700">
                 Message
                 <textarea
+                  name="message"
                   required
                   className="mt-2 min-h-[140px] w-full rounded-xl border border-sand-200 bg-white/80 px-4 py-2 text-sm"
-                  value={form.message}
-                  onChange={(event) => setForm((prev) => ({ ...prev, message: event.target.value }))}
                   placeholder="Describe your project, scale, and goals."
                 />
               </label>
-              {error ? <p className="text-sm text-clay-700">{error}</p> : null}
-              <PrimaryButton className="w-full" type="submit" disabled={status === 'sending'}>
-                {status === 'sending' ? 'Sending...' : 'Send Message'}
+              <PrimaryButton className="w-full" type="submit">
+                Send Message
               </PrimaryButton>
             </form>
           </Reveal>
@@ -110,19 +82,9 @@ const Contact = () => {
                   response.
                 </p>
               </div>
-              {status === 'success' ? (
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="rounded-xl border border-forest-200 bg-forest-50 p-4 text-sm text-forest-700"
-                >
-                  Thank you. Your message has been sent successfully.
-                </motion.div>
-              ) : (
-                <div className="rounded-xl border border-sand-200 bg-white/70 p-4 text-sm text-forest-700">
-                  Both you and Dr. Darigi will receive a copy of your message for record keeping.
-                </div>
-              )}
+              <div className="rounded-xl border border-sand-200 bg-white/70 p-4 text-sm text-forest-700">
+                Both you and Dr. Darigi will receive a copy of your message for record keeping.
+              </div>
             </div>
           </Reveal>
         </div>
