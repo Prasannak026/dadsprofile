@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import Container from '../components/Container'
 import SectionHeading from '../components/SectionHeading'
 import PrimaryButton from '../components/PrimaryButton'
